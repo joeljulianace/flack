@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <h1>{%block title %}Channels{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <form method="POST">
+        <div class="form-group">
+            <label for="username">Channels</label>
+            <input type="text" name="username" id="username" class="form-control" required>
+        </div>
+        <input type="submit" value="Log In" class="btn btn-primary">
+    </form>
+{% endblock %}
